@@ -9,32 +9,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <title><?= $title ?></title>
   </head>
-  <body>    
-    <div class="jumbotron jtron">
-        <h1 class="display-4 mt-3 text-center text-light">Selamat Datang</h1>        
-        <hr class="my-4">
-        <h3 class="text-light text-center">Silahkan Cari Film Dibawah</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary bg-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+  <body>
+    <section id="header">
+        <div class="jumbotron jtron">
+            <div class="row mt-5">
+                <div class="col">
+                    <h1 class="display-4 mt-3 text-center text-light">Selamat Datang</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h3 class="text-light text-center">Silahkan Cari Film Dibawah</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Masukan Judul film">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary bg-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-
+    </section>
+        
+    <section id="content">
+        
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
