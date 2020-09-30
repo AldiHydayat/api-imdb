@@ -1,0 +1,7 @@
+.jtron {
+    margin-top: -60px;
+    min-height: 600px;
+    background-size: cover;
+    background-image: url("/img/poster-film.jpg");
+    position: relative;    
+}
