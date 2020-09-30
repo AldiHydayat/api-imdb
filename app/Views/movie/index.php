@@ -32,12 +32,14 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Masukan Judul film">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary bg-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                        <form action="" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Masukan Judul film" name="keyword">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary bg-primary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+                                </div>                            
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,33 @@
     </section>
         
     <section id="content">
-        
+        <?php if($movies != null) :?>
+            <?php if($movies['Response'] == 'True') : ?>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <?php foreach($movies['Search'] as $movie) :?>
+                        <div class="col-md-3 col-sm mr-2 mt-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="<?= $movie['Poster']; ?>" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title"><?= $movie['Title']; ?></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Tahun : <?= $movie['Year']; ?></h6>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <?php else : ?>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-center text-danger">Film Tidak ditemukan</h3>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        <?php endif; ?>
     </section>
 
     <!-- Optional JavaScript -->

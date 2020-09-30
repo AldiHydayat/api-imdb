@@ -5,6 +5,10 @@
     background-image: url("/img/poster-film.jpg");
     position: relative;    
 }
- h1 , h3 {
-    font-weight: 200;
- }
+h1 , h3 {
+font-weight: 200;
+}
+
+.card img {
+   
+}
