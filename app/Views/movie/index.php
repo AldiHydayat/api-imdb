@@ -52,8 +52,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <?php foreach($movies['Search'] as $movie) :?>
-                        <div class="col-md-3 col-sm mr-2 mt-2">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col-md-5 col-lg-2 col-sm-6 mr-2 mt-2">
+                            <div class="card">
                                 <img src="<?= $movie['Poster']; ?>" class="card-img-top img-fluid">
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $movie['Title']; ?></h5>
